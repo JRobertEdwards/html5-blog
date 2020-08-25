@@ -13,13 +13,15 @@ class CreatePcSpecsTable extends Migration
      */
     public function up()
     {
-        Schema::create('pc_specs', function (Blueprint $table) {
-            $table->id()->unique()->autoIncrement();
-            $table->string('component');
-            $table->string('description');
-            $table->timestamps();
+        Schema::create(
+            'pc_specs', function (Blueprint $table) {
+                $table->id()->unique()->autoIncrement();
+                $table->string('component');
+                $table->string('description');
+                $table->timestamps();
 
-        });
+            }
+        );
     }
 
     /**

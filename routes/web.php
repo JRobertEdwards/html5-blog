@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\PcSpecsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,23 +13,27 @@ use App\PcSpecsController;
 |
 */
 
-Route::get('/', function () {
-    return view('index', ['photoName' => env('PHOTO_NAME_HOME')]);
-});
+Route::get(
+    '/', function () {
+        return view('index');
+    }
+);
 
 // Photoname handled in the controller for this view
-Route::get('about', 'PcSpecsController@getPcSpecs', function () {
-});
+Route::get(
+    'about', function () {
+        return view('about');
+    }
+);
 
+Route::get(
+    'work', function () {
+        return view('work');
+    }
+);
 
-Route::get('work', function () {
-    return view('work', ['photoName' => env('PHOTO_NAME_WORK')]);
-});
-
-Route::get('contact', function () {
-    return view('contact', ['photoName' => env('PHOTO_NAME_CONTACT')]);
-});
-
-Route::get('elements', function () {
-    return view('elements', ['photoName' => env('PHOTO_NAME_ABOUT')]);
-});
+Route::get(
+    'contact', function () {
+        return view('contact');
+    }
+);

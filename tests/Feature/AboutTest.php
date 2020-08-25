@@ -56,7 +56,7 @@ class AboutTest extends TestCase
      */
     public function testPcSpecsTable($expectedKey, $expectedValue)
     {
-        $pcSpecs = factory(\App\PcSpecs::class)->make()->toArray();
+        $pcSpecs = factory(\App\Models\PcSpecs::class)->make()->toArray();
         $this->assertArrayHasKey($expectedKey, $pcSpecs);
         $this->assertContains($expectedValue, $pcSpecs);
     }
