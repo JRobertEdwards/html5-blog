@@ -7,6 +7,7 @@ This is a small website that I've made using a <a href="https://html5up.net/">HT
 # How to setup
 
 Once you've git cloned you should be able to run the following commands to setup once you've entered db credentials:
+
 `composer install`
 
 `php artisan migrate`
