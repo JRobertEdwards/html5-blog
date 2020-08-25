@@ -31,16 +31,6 @@
     "extra": {
         "laravel": {
             "dont-discover": []
-        },
-        "hooks": {
-            "pre-commit": [
-                "echo committing as $(git config user.name)",
-                "phpcbf ./app/"
-            ],
-            "pre-push": [
-                "php-cs-fixer fix --dry-run .",
-                "composer test"
-            ]
         }
     },
     "autoload": {
