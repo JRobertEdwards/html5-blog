@@ -62,6 +62,9 @@
         ],
         "test": [
             "@php artisan test --without-tty"
+        ],
+        "phpcs-fix": [
+            "phpcbf ./app/"
         ]
     }
 }
