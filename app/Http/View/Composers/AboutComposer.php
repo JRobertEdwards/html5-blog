@@ -17,7 +17,7 @@ class AboutComposer
     /**
      * Create a new profile composer.
      *
-     * @param  UserRepository $users
+     * @param  PcSpecs $pcSpecs
      * @return void
      */
     public function __construct(PcSpecs $pcSpecs)

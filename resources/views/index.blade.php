@@ -1,6 +1,8 @@
 @extends('layout.app')
 @section('sidebar')
 @parent 
+<br>
+
 <header id="header">
 <div class="logo">
 	<span class="icon fa-gem"></span>

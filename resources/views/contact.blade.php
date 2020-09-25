@@ -3,7 +3,6 @@
 
 @section('content')
 <br>
-    <!-- Contact -->
     <article id="contact">
         <h2 class="major">Contact</h2>
         <form method="post" action="#">

@@ -37,3 +37,9 @@ Route::get(
         return view('contact');
     }
 );
+
+Route::get(
+    'elements', function () {
+        return view('elements');
+    }
+);
