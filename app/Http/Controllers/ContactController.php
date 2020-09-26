@@ -23,14 +23,16 @@ class ContactController extends Controller
         Contact::create($request->all());
 
         //  Send mail to admin
-        Mail::send('mailsent', [
+        Mail::send(
+            'mailsent', [
             'name' => $request->get('name'),
             'email' => $request->get('email'),
             'user_query' => $request->get('message'),
-        ], function($message) use ($request){
-            $message->from('jre@joshedwards.dev');
-            $message->to('josh.r.edwards@gmail.com', 'Admin')->subject('joshedwards.dev site contact');
-        });
+            ], function ($message) use ($request) {
+                $message->from('jre@joshedwards.dev');
+                $message->to('josh.r.edwards@gmail.com', 'Admin')->subject('joshedwards.dev site contact');
+            }
+        );
 
         return back()->with('success', 'Thank you for contact me, I\'ll be in touch!');
 
