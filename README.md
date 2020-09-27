@@ -1,4 +1,4 @@
-![Laravel](https://github.com/JRobertEdwards/html5-blog/workflows/Laravel/badge.svg?branch=master)
+![PHP Composer](https://github.com/JRobertEdwards/html5-blog/workflows/PHP%20Composer/badge.svg)
 
 # HTML5-Up website
 
