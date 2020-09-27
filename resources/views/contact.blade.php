@@ -35,7 +35,14 @@
             <ul class="actions">
                 <li><input type="submit" value="Send Message" class="primary" /></li>
                 <li><input type="reset" value="Reset" /></li>
+                @if (session('status'))
+                <div class="alert alert-success">
+                    <li>{{ session('status') }}</li>
+                </div>
+                @endif
             </ul>
+
+
         </form>
     </article>
 

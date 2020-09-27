@@ -27,14 +27,12 @@ class ContactController extends Controller
             'mailsent', [
             'name' => $request->get('name'),
             'email' => $request->get('email'),
-            'user_query' => $request->get('message'),
+            'user_query' => $request->get('user_query'),
             ], function ($message) use ($request) {
                 $message->from('jre@joshedwards.dev');
                 $message->to('josh.r.edwards@gmail.com', 'Admin')->subject('joshedwards.dev site contact');
             }
         );
-
-        return back()->with('success', 'Thank you for contact me, I\'ll be in touch!');
-
+        return back()->with('status', 'Thank you for contacting me, I\'ll be in touch!');
     }
 }
