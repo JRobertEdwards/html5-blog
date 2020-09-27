@@ -13,7 +13,10 @@ Once you've git cloned you should be able to run the following commands to setup
 `php artisan migrate`
 
 ## Storage setup
-In order to allow the Work page to display correctly you need to create a folder structure in the /public/storage directory called json. In this folder add a projects.json file with the following content:
+
+First run: `php artisan storage:link`
+
+In order to allow the Work page to display correctly you need to create a folder structure in the /storage/app/public directory called json. In this folder add a projects.json file with the following content:
 ```json
 {
     "Projects": [
@@ -52,8 +55,8 @@ In order to allow the Work page to display correctly you need to create a folder
     ]
 }
 ```
-Once you have added this file run: 
-`php artisan storage:link`
+Now the storage is linked to the public folder and the json file you just created should show up in the public/storage/json folder.
+
 
 This could have been deployed with a static page display, I opted to serve the json object through the Storage Laravel class as an experiment.
 
