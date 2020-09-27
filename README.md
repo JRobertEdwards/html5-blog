@@ -52,6 +52,9 @@ In order to allow the Work page to display correctly you need to create a folder
     ]
 }
 ```
+Once you have added this file run: 
+`php artisan storage:link`
+
 This could have been deployed with a static page display, I opted to serve the json object through the Storage Laravel class as an experiment.
 
 Now just run:
