@@ -14,7 +14,7 @@ Once you've git cloned you should be able to run the following commands to setup
 
 ## Storage setup
 In order to allow the Work page to display correctly you need to create a folder structure in the /public/storage directory called json. In this folder add a projects.json file with the following content:
-
+```json
 {
     "Projects": [
         {
@@ -51,7 +51,7 @@ In order to allow the Work page to display correctly you need to create a folder
         }
     ]
 }
-
+```
 This could have been deployed with a static page display, I opted to serve the json object through the Storage Laravel class as an experiment.
 
 Now just run:
