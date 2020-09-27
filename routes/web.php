@@ -38,6 +38,12 @@ Route::get(
     }
 );
 
+Route::post('contact', [
+    'uses' =>'ContactController@saveContact',
+    'as' => 'contact.store'
+    ]
+);
+
 Route::get(
     'elements', function () {
         return view('elements');
