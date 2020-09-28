@@ -63,3 +63,9 @@ This could have been deployed with a static page display, I opted to serve the j
 Now just run:
 
 `php artisan serve`
+
+# Future improvements
+
+- Currently the site has a few requirements to allow a user to setup, ideally this should be a one-step command to spin-up a docker container that will run the migrations and the storage link for the user.
+
+- API creation to pull projects data from the DB: mostly a learning tool for Laravel API understanding.
