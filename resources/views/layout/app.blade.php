@@ -40,6 +40,7 @@
 				</ul>
 				<h6 class="photo-credit">{{ $photoName ?? '' }} | </h6>
 				<h6 class="design">Design: <a href="https://html5up.net">HTML5 UP</a>.</h6>
+				<h6 class="source">Source code available <a href="https://github.com/JRobertEdwards/html5-blog">Here</a></h6>
 			</footer>
 		</div>
 
@@ -59,6 +60,9 @@
 		a.active {
 			text-decoration: line-through;
 		}
+		#active {
+			background-color: red;
+		}
 		h6.photo-credit {
 			opacity: 45%;
 			float: left;
@@ -71,7 +75,11 @@
 			display: block;
 		}
 
-
+		h6.source {
+			opacity: 45%;
+			float:right;
+			display: block;
+		}
 
 	</style>
 
