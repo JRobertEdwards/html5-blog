@@ -10,8 +10,8 @@
         <table>
             <thead>
                 <tr>
-                    <th>Project</th>
                     <th>Technologies used</th>
+                    <th>Description</th>
                 </tr>
             </thead>
         @foreach( $projects as $project )
