@@ -2,7 +2,7 @@
 
 <p>You've been sent a contact email by {{ $name }} with the message:</p>
 
-{{ $user_query  }}.
+{{ $user_query  }}
 <br>
 <p>Contact them @: {{ $email }}</p>
 
