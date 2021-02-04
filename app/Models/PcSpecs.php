@@ -8,5 +8,6 @@ class PcSpecs extends Model
 {
     protected $table = 'pc_specs';
     protected $primaryKey = 'id';
+    protected $fillable = ['description', 'component'];
 
 }

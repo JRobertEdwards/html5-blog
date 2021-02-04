@@ -13,11 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get(
-    '/', function () {
-        return view('index');
-    }
-);
+Route::get('/', array('uses' => 'HomeController@showLogin'));
+
+
+Route::post('/', array('uses' => 'HomeController@doLogin'));
 
 // Photoname handled in the controller for this view
 Route::get(

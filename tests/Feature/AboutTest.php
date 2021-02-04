@@ -28,10 +28,10 @@ class AboutTest extends TestCase
      *
      * @return void
      */
-    public function testStatusOk()
-    {
-        $this->response->assertStatus(200);
-    }
+    // public function testStatusOk()
+    // {
+    //     $this->response->assertStatus(200);
+    // }
 
     /**
      * Check the photname is populated correctly

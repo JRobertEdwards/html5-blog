@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get(
         return $request->user();
     }
 );
+
+Route::resource('pcspec', 'PCSpecController');
