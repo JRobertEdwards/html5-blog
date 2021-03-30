@@ -18,7 +18,6 @@
 						<li><a class="{{ (request()->is('/')) ? 'active' : '' }}" href="/">Home</a></li>
 						<li><a class="{{ (request()->is('about')) ? 'active' : '' }}" href="/about">About</a></li>
                         <li><a class="{{ (request()->is('work')) ? 'active' : '' }}" href="/work">Work</a></li>
-                        <li><a class="{{ (request()->is('contact')) ? 'active' : '' }}" href="/contact">Contact</a></li>
                     </ul>
                 </nav>
 			</header>
@@ -33,10 +32,11 @@
 			<!-- Footer -->
             <footer id="footer">
 				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/joshrobertedwards/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://twitter.com/CorkyJosh" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="https://www.instagram.com/jredwards91" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="https://github.com/JRobertEdwards" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/joshrobertedwards/" class="icon brands fa-linkedin" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://twitter.com/CorkyJosh" class="icon brands fa-twitter" title="Twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.instagram.com/jredwards91" class="icon brands fa-instagram" title="Instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/JRobertEdwards" class="icon brands fa-github" title="GitHub"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:jre@joshedwatds.dev" class="far fa-envelope" title="Contact Me"></a></li>
 				</ul>
 				<h6 class="photo-credit">{{ $photoName ?? '' }} | </h6>
 				<h6 class="design">Design: <a href="https://html5up.net">HTML5 UP</a>.</h6>

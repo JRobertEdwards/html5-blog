@@ -7,12 +7,6 @@ use Illuminate\View\View;
 
 class AboutComposer
 {
-    /**
-     * The model for the PC Specs in the db
-     *
-     * @var PcSpecs
-     */
-    protected $pcSpecs;
 
     /**
      * Create a new profile composer.
@@ -20,9 +14,9 @@ class AboutComposer
      * @param  PcSpecs $pcSpecs
      * @return void
      */
-    public function __construct(PcSpecs $pcSpecs)
+    public function __construct()
     {
-        $this->pcSpecs = $pcSpecs;
+        $this->pcSpecs = $this->getPcSpecs();
     }
 
     /**
@@ -33,7 +27,42 @@ class AboutComposer
      */
     public function compose(View $view)
     {
-        $view->with('pcSpecs', $this->pcSpecs::all());
+        $view->with('pcSpecs', $this->pcSpecs);
         $view->with('photoName', env('PHOTO_NAME_ABOUT'));
+    }
+
+    private function getPcSpecs()
+    {
+        return [
+            [
+                'component' => 'CPU',
+                'description' => 'Ryzen 3600',
+            ],
+            [
+                'component' => 'Graphics Card',
+                'description' => 'RTX 2070 Super',
+            ],
+            [
+                'component' => 'RAM',
+                'description' => 'Corsair Vengeance 16GB @ 3200Mhz',
+            ],
+            [
+                'component' => 'Motherboard',
+                'description' => 'MSI Gaming Plus',
+            ],
+            [
+                'component' => 'Storage',
+                'description' => 'Samsung Evo 970 NVMe 1TB SSD',
+            ],
+            [
+                'component' => 'Power Supply',
+                'description' => 'EVGA Supernova 650 Watt',
+            ],
+            [
+                'component' => 'Case',
+                'description' => 'NZXT H510',
+            ],
+        ];
+
     }
 }
