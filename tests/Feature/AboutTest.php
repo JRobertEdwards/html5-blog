@@ -8,7 +8,7 @@ use Tests\TestCase;
 
 class AboutTest extends TestCase
 {
-    use RefreshDatabase;
+    // use RefreshDatabase;
 
     private $response;
 
@@ -49,28 +49,5 @@ class AboutTest extends TestCase
     {
         $key = 'pcSpecs';
         $this->response->assertViewHas($key);
-    }
-
-    /**
-     * @dataProvider pcSepcsProvider
-     */
-    public function testPcSpecsTable($expectedKey, $expectedValue)
-    {
-        $pcSpecs = factory(\App\Models\PcSpecs::class)->make()->toArray();
-        $this->assertArrayHasKey($expectedKey, $pcSpecs);
-        $this->assertContains($expectedValue, $pcSpecs);
-    }
-
-    public function pcSepcsProvider()
-    {
-        return [
-            ['CPU', 'Ryzen 3600'],
-            ['Graphics Card', 'RTX 2070 Super'],
-            ['Motherboard', 'MSI GamingPlus'],
-            ['RAM', 'Corsair Vengeance 3200MHz'],
-            ['Case', 'NZXT H510'],
-            ['Power Supply', 'EVGA Supernova 650 Watt']   ,
-            ['Storage', 'Samsung EVO 970 NVMe 1TB SSD']         
-        ];
     }
 }

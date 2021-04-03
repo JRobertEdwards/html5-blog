@@ -36,7 +36,7 @@
 					<li><a href="https://twitter.com/CorkyJosh" class="icon brands fa-twitter" title="Twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="https://www.instagram.com/jredwards91" class="icon brands fa-instagram" title="Instagram"><span class="label">Instagram</span></a></li>
 					<li><a href="https://github.com/JRobertEdwards" class="icon brands fa-github" title="GitHub"><span class="label">GitHub</span></a></li>
-					<li><a href="mailto:jre@joshedwatds.dev" class="far fa-envelope" title="Contact Me"></a></li>
+					<li><a href="mailto:josh.r.edwards@gmail.com" class="far fa-envelope" title="Contact Me"></a></li>
 				</ul>
 				<h6 class="photo-credit">{{ $photoName ?? '' }} | </h6>
 				<h6 class="design">Design: <a href="https://html5up.net">HTML5 UP</a>.</h6>
