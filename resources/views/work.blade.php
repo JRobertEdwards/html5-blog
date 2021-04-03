@@ -4,7 +4,7 @@
 @section('content')
     <article id="work">
         <h2 class="major">Work</h2>
-        <p>
+        <p class="align-left">
             During my time in the industry I've been involved in numerous areas of software development and used a multitude of technologies, this includes:
         </p>
         <table>
