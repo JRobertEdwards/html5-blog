@@ -10,8 +10,6 @@ Once you've git cloned you should be able to run the following commands to setup
 
 `composer install`
 
-`php artisan migrate`
-
 ## Storage setup
 
 First run: `php artisan storage:link`
