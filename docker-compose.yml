@@ -12,6 +12,7 @@ services:
       - APACHE_RUN_GROUP=#${UID}
     volumes:
       - .:/var/www/html
+      - ${PWD}/joshedwards.dev.conf:/etc/apache2/sites-available/joshedwards.dev.conf
     ports:
       - 80:80
       - 443:443
