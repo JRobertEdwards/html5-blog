@@ -1,4 +1,4 @@
-FROM php:7.2-apache
+FROM php:7.3-apache
 
 RUN apt-get update
 
@@ -9,6 +9,7 @@ RUN apt-get install -y \
     curl \
     sudo \
     unzip \
+    libzip-dev \
     libicu-dev \
     libbz2-dev \
     libpng-dev \
