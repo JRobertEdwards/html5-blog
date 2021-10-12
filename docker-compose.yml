@@ -1,12 +1,12 @@
-version: '3.5'
+version: "3.5"
 
 services:
-  laravel-app:
+  laravel_blog:
     build:
-      context: '.'
+      context: "."
       args:
         uid: ${UID}
-    container_name: laravel-app
+    container_name: laravel_blog
     environment:
       - APACHE_RUN_USER=#${UID}
       - APACHE_RUN_GROUP=#${UID}
@@ -19,8 +19,7 @@ services:
     networks:
       backend:
         aliases:
-          - laravel-app
-
+          - laravel_blog
   # mysql-db:
   #   image: mysql:5.7
   #   container_name: mysql-db
