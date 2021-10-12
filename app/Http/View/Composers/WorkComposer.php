@@ -12,9 +12,7 @@ class WorkComposer
 
     public function __construct()
     {
-        $json = Storage::disk('public')->get('json/projects.json');
-        $projects = json_decode($json, true);
-        $this->projects = $projects;
+        $this->projects = config('projects');
     }
 
     /**
