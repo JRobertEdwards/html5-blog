@@ -9,6 +9,8 @@ This is a small website that I've made using a <a href="https://html5up.net/">HT
 To run this locally you should have docker installed
 # How to setup
 
+Copy or change the .env.example file to .env
+
 Build the image and spin the container up:
 
 `docker-compose up -d`
